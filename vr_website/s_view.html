@@ -11,7 +11,8 @@
     
   var oldText = document.getElementById("transcript_text").getAttribute("text");
  var rawFile = new XMLHttpRequest();
-      rawFile.open("GET", "http://localhost:5000/speech-to-text/speech.txt", false);
+     rawFile.open("GET", "http://183ecb04.ngrok.io/speech-to-text/speech.txt", false);
+     // rawFile.open("GET", "http://localhost:5000/speech-to-text/speech.txt", false);
       rawFile.onreadystatechange = function () {
         if (rawFile.readyState === 4) {
           if (rawFile.status === 200 || rawFile.status == 0) {
