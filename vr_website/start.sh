@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-node server.js &
+#node server.js &
 
 while [ 1 ]
 do

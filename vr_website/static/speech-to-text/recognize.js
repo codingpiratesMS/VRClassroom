@@ -65,8 +65,6 @@ async function syncRecognize(
     .map(result => result.alternatives[0].transcript)
     .join('\n');
   console.log(`Transcription: `, transcription);
-
-
   // [END speech_transcribe_sync]
 }
 
@@ -405,8 +403,7 @@ function streamingMicRecognize(encoding, sampleRateHertz, languageCode) {
     },
     interimResults: false, // If you want interim results, set this to true
   };
-
-    const fs = require('fs')
+const fs = require('fs');
   // Create a recognize stream
   const recognizeStream = client
     .streamingRecognize(request)
